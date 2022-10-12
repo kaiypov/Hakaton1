@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+.navbar {
+    width: 100%;
+    height: 150px;
+    background-color:blueviolet;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.navbar a{
+    width: 400px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none
+    ;
+}
+.navbar button {
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    border: 1px white solid;
+    border-radius: 20px;
+font-size: 20px;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+.am-text {
+    width: 400px;
+    font-size: 22px;
+    
+}
+.am-text p {
+    margin-top: 10px;
+
+}
+.edu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: mediumaquamarine;
+    box-shadow: 2px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.expa {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px
+    ;
+}
+.expa_block {
+    width: 400px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gainsboro;
+}
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: mediumaquamarine;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.languages1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 30px;
+    border: 1px solid black;
+    
+}
+.block3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: mediumaquamarine;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.skills {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+    border: 1x solid black;
+}
+.hobbies-h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: mediumaquamarine;
+    box-shadow: 2px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.hobbies {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+.hobbies-text {
+    width: 400px;
+    font-size: 22px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+} 
+.hobbies-text p {
+    margin-top: 30px;
+    
+}
+.hobbies-img img{
+    border-radius: 5px;
+}
+.footer1 {
+    height: 250px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1D2830;
+    color: white;
+    border-bottom: 1px solid white;
+    
+}
+.footer-text {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 40px;
+   
+    
+}
+.footer-text ul {
+    list-style: none;
+    margin-top: 20px;
+    
+    
+}
+.footer-text li {
+    margin-top: 10px;
+}
+@media all and (max-width:1050px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hobbies-text p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+    .hobbies img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    @media all and (max-width:905px){
+    .hobbies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    }
+    @media all and (max-width:780px)
+    {
+        .links {
+                display: none;
+              }
+              .hamburger-menu {
+                display: block;
+              }
+              .menu__btn {
+                display: block;
+              }
+        }
+    
+        @media all and (max-width:600px) {
+            .navbar {
+                width: 600px;
+            }
+            .block1 {
+                width: 600px;
+            }
+            .block2 {
+                width: 600px;
+            }
+            .block3 {
+                width: 600px;
+            }
+            .hobbies-h2 {
+                width:600px;
+            }
+            .hobbies {
+                width: 600px;
+            }
+            .footer1 {
+                width: 600px;
+            }
+        }
+
+     /* burger menu start */
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: white;
+  
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #eceff1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  
+    transition-duration: 0.25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: 0.25s;
+  }
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+  .hamburger-menu {
+    display: none;}
+  
+    
+    
